@@ -1,0 +1,31 @@
+npm init
+npm install prettier
+npm init
+
+npm install @playwright/test
+npx playwright install
+
+npx playwright test
+npx playwright test --headed
+npx playwright test --browser=firefox
+
+npx playwright test --headed --browser=firefox
+npx playwright test --browser=all
+
+npx playwright test tests/example.spec.ts
+
+npx playwright test --grep @myTag
+npx playwright test --grep-invert  @myTag
+
+npx playwright test --config=playwright.config.ts --project=Webkit
+
+px playwright test --config=playwright.config.ts --project=Chromium --reporter=line
+px playwright test --config=playwright.config.ts --project=Chromium --reporter=list
+px playwright test --config=playwright.config.ts --project=Chromium --reporter=dot
+px playwright test --config=playwright.config.ts --project=Chromium --reporter=junit
+npx playwright test --config=playwright.config.ts --project=Chromium --reporter=html
+
+npx playwright show-report
+
+lsof -i tcp:9323
+kill -9 68011
